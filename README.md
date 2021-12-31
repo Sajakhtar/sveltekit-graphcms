@@ -6,7 +6,6 @@ This project is based on the following tutorial:
 
 [SvelteKit Crash Course w/ Tailwind CSS and DaisyUI, GraphQL and dynamic routes](https://www.youtube.com/watch?v=zH2qG9YwN3s&list=PLGi_uHe_v04AuMoPAtBN3ULy7zhFILKRQ&index=3)
 
-
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
