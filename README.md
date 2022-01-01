@@ -25,6 +25,15 @@ npm init svelte@next my-app
 
 ### GraphCMS
 
+Signup/ login to [graphcms](https://graphcms.com/)
+
+Select the blog starter template and create a new project.
+
+Keep `include template content` checked.
+
+Select a suitable CDN node location and create project.
+
+Select the free Community plan.
 
 
 ## Developing
