@@ -22,6 +22,11 @@ npm init svelte@next my-app
 
 ### Tailwind CSS
 
+Use [svelte-add]() utlity to install Tailwind CSS
+
+```bash
+npx svelte-add@latest tailwindcss
+```
 
 ### GraphCMS
 
