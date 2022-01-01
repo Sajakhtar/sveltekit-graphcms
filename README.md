@@ -40,6 +40,22 @@ Select a suitable CDN node location and create project.
 
 Select the free Community plan.
 
+### Dependancies
+
+Install the following dev dependancies:
+
+```bash
+npm i -D graphql-request graphql env-cmd daisyui @tailwindcss/typography
+
+# or
+
+npm install graphql-request --save-dev
+npm install graphql --save-dev
+npm install env-cmd --save-dev
+npm install daisyui --save-dev
+npm install @tailwindcss/typography --save-dev
+```
+
 
 ## Developing
 
