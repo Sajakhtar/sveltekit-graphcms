@@ -69,6 +69,10 @@ query Posts {
 }
 ```
 
+Place query in a `get` request endpoint for `posts` and see the result in:
+
+http://localhost:3333/posts.json
+
 
 ### Dependancies
 
