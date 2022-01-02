@@ -48,6 +48,27 @@ Navigate to `Settings` then `API Access` and copy the `Content API` endpoint int
 GRAPHQL_ENDPOINT=https://#########.graphcms.com/v2/############
 ```
 
+#### API Playground
+
+Navigate to the `API Playground`
+
+Try a query to fetch all posts:
+
+```graphql
+query Posts {
+  posts {
+    title
+    slug
+    date
+    excerpt
+    tags
+    coverImage {
+      url
+    }
+  }
+}
+```
+
 
 ### Dependancies
 
