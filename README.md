@@ -40,6 +40,15 @@ Select a suitable CDN node location and create project.
 
 Select the free Community plan.
 
+#### API Endpoint
+
+Navigate to `Settings` then `API Access` and copy the `Content API` endpoint into `.env`
+
+```
+GRAPHQL_ENDPOINT=https://#########.graphcms.com/v2/############
+```
+
+
 ### Dependancies
 
 Install the following dev dependancies:
