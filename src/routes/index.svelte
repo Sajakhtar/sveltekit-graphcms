@@ -22,6 +22,10 @@
   export let posts
 </script>
 
+<svelte:head>
+  <title>SvelteKit DaisyUI graphcms blog</title>
+</svelte:head>
+
 <h1>SvelteKit DaisyUI graphcms blog</h1>
 
 <pre>{JSON.stringify(posts, null, 2)}</pre>
