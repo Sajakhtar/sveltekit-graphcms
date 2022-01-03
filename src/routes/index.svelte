@@ -26,6 +26,6 @@
   <title>SvelteKit DaisyUI graphcms blog</title>
 </svelte:head>
 
-<h1>SvelteKit DaisyUI graphcms blog</h1>
+<h1 class="text-4xl mb-10 font-extrabold">SvelteKit DaisyUI graphcms blog</h1>
 
 <pre>{JSON.stringify(posts, null, 2)}</pre>
