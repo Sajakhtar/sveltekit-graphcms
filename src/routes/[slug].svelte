@@ -22,11 +22,10 @@
 <script>
   export let page
 
-  const { title, content: { html } } = page
 </script>
 
 <svelte:head>
-  <title>{title}</title>
+  <title>{page.title}</title>
 </svelte:head>
 
 <!-- <pre>{JSON.stringify(page, null, 2)}</pre> -->
@@ -35,5 +34,5 @@
 
 <article div class="prose">
   <!-- Tailwind typography Prose styles the content  -->
-  {@html html}
+  {@html page.content.html}
 </article>
