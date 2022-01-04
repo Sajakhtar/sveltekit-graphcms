@@ -48,6 +48,12 @@ Navigate to `Settings` then `API Access` and copy the `Content API` endpoint int
 GRAPHQL_ENDPOINT=https://#########.graphcms.com/v2/############
 ```
 
+#### Pages
+
+Graphcms has a `Pages` model for us to create content for standalone static pages.
+
+Navigate to `Content` and then `Pages`. There is an existing page for `About`, but pages can be creted for static content such as FAQ or Products/ Services.
+
 #### API Playground
 
 Navigate to the `API Playground`
@@ -76,7 +82,6 @@ Place query in a `get` request endpoint for `posts` and see the result in: http:
 
 ```graphql
 query Post($slug: String!) {
-query Post($slug: String!) {
   post(where: {slug: $slug}) {
     title
     date
@@ -103,6 +108,22 @@ query Post($slug: String!) {
 GraphQL has ability to transform images on the URl itself.
 
 Place query in a `get` request endpoint for a `post` (based on slug) and see the result in URI with a slug: http://localhost:3000/posts/technical-seo-with-graphcms.json
+
+##### Create a query to fetch all pages under the Pages model
+
+The `Pages` model contains static pages such as About, FAQ, Services.
+
+```graphql
+query Pages {
+  pages {
+    title
+    slug
+    content {
+      html
+    }
+  }
+}
+```
 
 ### Dependancies
 
