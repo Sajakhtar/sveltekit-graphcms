@@ -52,7 +52,7 @@ GRAPHQL_ENDPOINT=https://#########.graphcms.com/v2/############
 
 Navigate to the `API Playground`
 
-Try a query to fetch all posts:
+Create a query to fetch all posts:
 
 ```graphql
 query Posts {
@@ -62,6 +62,36 @@ query Posts {
     date
     excerpt
     tags
+    coverImage {
+      url
+    }
+  }
+}
+```
+
+
+Create a query to fetch a specific post:
+
+```graphql
+query Post($slug: String!) {
+query Post($slug: String!) {
+  post(where: {slug: $slug}) {
+    title
+    date
+    tags
+    author {
+      name
+      authorTitle: title
+      picture {
+        url(transformation:{image:{resize:{fit:clip, height:50, width:50}}})
+      }
+    }
+    content {
+      html
+      markdown
+      raw
+      text
+    }
     coverImage {
       url
     }
