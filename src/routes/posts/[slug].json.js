@@ -21,9 +21,6 @@ export const get = async (req) => {
         }
         content {
           html
-          markdown
-          raw
-          text
         }
         coverImage {
           url
