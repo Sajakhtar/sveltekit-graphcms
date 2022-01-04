@@ -7,7 +7,14 @@ export const get = async (req) => {
 
   try {
     const query = gql`
-
+    query Page($slug: String!) {
+      page(where: {slug: $slug}) {
+        title
+        content {
+          html
+        }
+      }
+    }
   `
   const variables = {slug}
   const { page } = await client.request(query, variables)

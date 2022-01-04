@@ -105,6 +105,8 @@ query Post($slug: String!) {
   }
 }
 ```
+Add `{"slug": "technical-seo-with-graphcms"}` in the Query Variables field before running the query.
+
 GraphQL has ability to transform images on the URl itself.
 
 Place query in a `get` request endpoint for a `post` (based on slug) and see the result in URI with a slug: http://localhost:3000/posts/technical-seo-with-graphcms.json
@@ -125,6 +127,24 @@ query Pages {
 }
 ```
 Place query in a `get` request endpoint for `pages` and see the result in: http://localhost:3000/pages.json
+
+##### Create a query to fetch a specifc page
+
+
+```graphql
+query Pages {
+  pages {
+    title
+    slug
+    content {
+      html
+    }
+  }
+}
+```
+Add `{"slug": "faq"}` in the Query Variables field before running the query.
+
+Place query in a `get` request endpoint for a `page` (based on slug) and see the result in URI with a slug: http://localhost:3000/pages/faq.json
 
 ### Dependancies
 
