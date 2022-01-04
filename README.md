@@ -52,7 +52,7 @@ GRAPHQL_ENDPOINT=https://#########.graphcms.com/v2/############
 
 Navigate to the `API Playground`
 
-Create a query to fetch all posts:
+##### Create a query to fetch all posts:
 
 ```graphql
 query Posts {
@@ -69,8 +69,12 @@ query Posts {
 }
 ```
 
+Place query in a `get` request endpoint for `posts` and see the result in:
 
-Create a query to fetch a specific post:
+http://localhost:3333/posts.json
+
+
+##### Create a query to fetch a specific post:
 
 ```graphql
 query Post($slug: String!) {
@@ -98,11 +102,7 @@ query Post($slug: String!) {
   }
 }
 ```
-
-Place query in a `get` request endpoint for `posts` and see the result in:
-
-http://localhost:3333/posts.json
-
+GraphQL has ability to transform images on the URl itself.
 
 ### Dependancies
 
