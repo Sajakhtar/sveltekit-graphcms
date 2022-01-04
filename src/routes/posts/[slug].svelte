@@ -62,3 +62,8 @@
     {/if}
   </div>
 </div>
+
+<article div class="prose">
+  <!-- Tailwind typography Prose styles the content  -->
+  {@html html}
+</article>
