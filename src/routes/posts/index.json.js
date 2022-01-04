@@ -21,7 +21,7 @@ export const get = async () => {
 
   return {
     status: 200,
-    body: {posts}
+    body: posts
   }
   } catch (error) {
     return {
