@@ -69,9 +69,7 @@ query Posts {
 }
 ```
 
-Place query in a `get` request endpoint for `posts` and see the result in:
-
-http://localhost:3333/posts.json
+Place query in a `get` request endpoint for `posts` and see the result in: http://localhost:3333/posts.json
 
 
 ##### Create a query to fetch a specific post:
@@ -103,6 +101,8 @@ query Post($slug: String!) {
 }
 ```
 GraphQL has ability to transform images on the URl itself.
+
+Place query in a `get` request endpoint for a `post` (based on slug) and see the result in URI with a slug: http://localhost:3000/posts/technical-seo-with-graphcms.json
 
 ### Dependancies
 

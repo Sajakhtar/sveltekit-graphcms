@@ -17,11 +17,11 @@ export const get = async () => {
       }
     }
   `
-  const posts = await client.request(query)
+  const { posts } = await client.request(query)
 
   return {
     status: 200,
-    body: posts
+    body: { posts }
   }
   } catch (error) {
     return {
