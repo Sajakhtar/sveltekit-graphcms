@@ -124,6 +124,7 @@ query Pages {
   }
 }
 ```
+Place query in a `get` request endpoint for `pages` and see the result in: http://localhost:3000/pages.json
 
 ### Dependancies
 
