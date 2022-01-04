@@ -2,4 +2,9 @@
 	import '../app.css';
 </script>
 
-<slot />
+<!-- global layout -->
+
+<main class="container max-w-xl mx-auto px-4">
+  <!-- content slots in -->
+  <slot />
+</main>
