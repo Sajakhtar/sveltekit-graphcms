@@ -50,3 +50,15 @@
 <p class="text-secondary text-xs tracking-widest font-semibold">
   {new Date(date).toDateString()}
 </p>
+
+<div class="flex justify-between mb-5">
+  <div>
+    {#if tags}
+      <div class="mt-5 space-x-2">
+        {#each tags as tag}
+          <span class="badge badge-primary">{tag}</span>
+        {/each}
+      </div>
+    {/if}
+  </div>
+</div>
