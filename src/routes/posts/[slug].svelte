@@ -1,5 +1,5 @@
 <script context="module">
-  // const slug = req.params.slug
+
   export const load = async ({ fetch, params }) => {
 
     const {slug} = params
