@@ -1,4 +1,4 @@
-<script >
+<script>
   import ThemeSelect from "./theme-select.svelte";
 
 

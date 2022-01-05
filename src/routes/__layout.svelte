@@ -20,9 +20,16 @@
 <script>
 	import '../app.css';
   import Nav from '$lib/nav.svelte'
+  import { onMount } from 'svelte'
+  import { themeChange } from 'theme-change'
+
+  onMount(async () => {
+    themeChange(false)
+  })
 
   // props
   export let pages
+
 </script>
 
 <!-- global layout -->

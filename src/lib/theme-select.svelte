@@ -1,4 +1,4 @@
-<div class="mb-8">
+<div>
 
   <select data-choose-theme class="select select-bordered select-primary select-xs pr-9 text-primary-content bg-primary">
 
