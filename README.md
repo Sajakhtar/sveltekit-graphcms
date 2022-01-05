@@ -151,7 +151,7 @@ Place query in a `get` request endpoint for a `page` (based on slug) and see the
 Install the following dev dependancies:
 
 ```bash
-npm i -D graphql-request graphql env-cmd daisyui @tailwindcss/typography
+npm i -D graphql-request graphql env-cmd daisyui @tailwindcss/typography theme-change
 
 # or
 
@@ -160,6 +160,7 @@ npm install graphql --save-dev
 npm install env-cmd --save-dev
 npm install daisyui --save-dev
 npm install @tailwindcss/typography --save-dev
+npm install theme-change --save-dev
 ```
 
 
