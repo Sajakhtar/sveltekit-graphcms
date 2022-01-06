@@ -217,10 +217,26 @@ npm run build
 
 ## Deployment
 
-### Static site deployment on Netlify without Git
+### Static site deployment on [Netlify](https://www.netlify.com/) without GitY
 
 Navigate to `Sites`, then drap and drop the `build` folder.
 
 Preview: https://blissful-mcclintock-8a62ec.netlify.app/
 
-###  Deployment on Vercel without Git
+###  Deployment on [Vercel](https://vercel.com/) with Github
+
+Install [Vercel CLI](https://vercel.com/cli)
+
+```bash
+npm i -g vercel
+```
+
+Deploy the current directory to Vercel:
+
+```bash
+vercel
+
+# Set defaults for the questions
+```
+
+Connect the Vercel project to the Github repository, such that any commits to the `main` branch will update on vercel.

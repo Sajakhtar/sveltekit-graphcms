@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "env-cmd svelte-kit dev",
-		"build": "env-cmd svelte-kit build",
+		"build": "svelte-kit build",
 		"package": "svelte-kit package",
-		"preview": "env-cmd svelte-kit preview",
+		"preview": "svelte-kit preview",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
