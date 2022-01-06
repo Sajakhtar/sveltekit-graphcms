@@ -240,3 +240,5 @@ vercel
 ```
 
 Connect the Vercel project to the Github repository, such that any commits to the `main` branch will update on vercel.
+
+Add the Environment variables.
