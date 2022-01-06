@@ -196,6 +196,16 @@ Before creating a production version of your app, install an [adapter](https://k
 npm i -D @sveltejs/adapter-static@next
 ```
 
+[Vercel adapter](https://kit.svelte.dev/docs#adapters):
+
+```bash
+# uninstall static adapter
+npm un @sveltejs/adapter-static@next
+
+# install vercel adapter
+npm i -D @sveltejs/adapter-vercel@next
+```
+
 ### Build
 
 ```bash
@@ -203,3 +213,14 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+
+## Deployment
+
+### Static site deployment on Netlify without Git
+
+Navigate to `Sites`, then drap and drop the `build` folder.
+
+Preview: https://blissful-mcclintock-8a62ec.netlify.app/
+
+###  Deployment on Vercel without Git
