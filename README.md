@@ -188,24 +188,6 @@ Update the dev script in `package.json` to access the environment variables:
 
 Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
-### Adapters
-
-[Static site adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode):
-
-```bash
-npm i -D @sveltejs/adapter-static@next
-```
-
-[Vercel adapter](https://kit.svelte.dev/docs#adapters):
-
-```bash
-# uninstall static adapter
-npm un @sveltejs/adapter-static@next
-
-# install vercel adapter
-npm i -D @sveltejs/adapter-vercel@next
-```
-
 ### Build
 
 ```bash
@@ -217,13 +199,30 @@ npm run build
 
 ## Deployment
 
-### Static site deployment on [Netlify](https://www.netlify.com/) without GitY
+### Static site deployment on [Netlify](https://www.netlify.com/) without Git
+
+Install [Static site adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode):
+
+```bash
+npm i -D @sveltejs/adapter-static@next
+```
 
 Navigate to `Sites`, then drap and drop the `build` folder.
 
 Preview: https://blissful-mcclintock-8a62ec.netlify.app/
 
 ###  Deployment on [Vercel](https://vercel.com/) with Github
+
+Install [Vercel adapter](https://kit.svelte.dev/docs#adapters):
+
+```bash
+# uninstall static adapter
+npm un @sveltejs/adapter-static@next
+
+# install vercel adapter
+npm i -D @sveltejs/adapter-vercel@next
+```
+
 
 Install [Vercel CLI](https://vercel.com/cli)
 
@@ -244,3 +243,32 @@ Connect the Vercel project to the Github repository, such that any commits to th
 Add the Environment variables.
 
 Preview: https://sveltekit-graphcms.vercel.app/
+
+### Deployment on [Netlify](https://www.netlify.com/) with Github
+
+Install [Static site adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode):
+
+```bash
+# uninstall vercel adapter
+npm un @sveltejs/adapter-vercel@next
+
+# install statis adapter
+npm i -D @sveltejs/adapter-static@next
+```
+
+Update `svelte.config.js`:
+
+```js
+import adapter from '@sveltejs/adapter-static'
+```
+
+Create a `netlify.toml` file
+
+```toml
+[build]
+  command = "npm run build"
+  publish = build/"
+```
+Push changes to github.
+
+In Netlify, create new site from git, authenticate with Github, select the repo, check build commands, add environment variables, then deploy.
